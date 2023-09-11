@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=M+PLUS+Rounded+1c&family=Orbitron:wght@500&family=Poppins:ital@0;1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="title">
+                <h1>Hiep's Library</h1>
+            </div>
+        </div>
+        <div id="main">
+            <div id="button-container">
+                <button id="add">+ Add new book</button>
+            </div>
+
+            <div id="main">
+                <dialog>
+                    <h2>New book</h2>
+                    <form>
+                        <input type="text" id="book-title" name="book-title" placeholder="Title" required>
+                        <br>
+                        <input type="text" id="book-author" name="book-author" placeholder="Author" required>
+                        <br>
+                        <input type="number" id="book-pages" name="book-pages" placeholder="Pages" required>
+                        <br>
+                        <div id="is-read">
+                            <label for="read">Have you read it?</label>
+                            <input type="checkbox" id="read" name="read" value="1">
+                        </div>
+                        <div id="form-buttons">
+                            <button type=button id="cancel" value="cancel" formmethod="dialog">Cancel</button>
+                            <button type=submit id="submit">Submit</button>
+                        </div>
+                        
+                    </form>
+                </dialog>
+                <div id="book-grid">
+                    <!-- books will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
